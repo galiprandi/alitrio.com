@@ -9,7 +9,8 @@ Landing estática de Alitrio construida con Astro y desplegada en GitHub Pages.
 - Mantener una sola página pública: `src/pages/index.astro`.
 - Conservar las versiones en español e inglés en la misma experiencia.
 - No incorporar backend ni dependencias sin una necesidad demostrable.
-- Usar `mailto:contact@alitrio.com` para el formulario hasta que exista una integración de formularios.
+- El formulario de contacto usa Web3Forms (`https://api.web3forms.com/submit`). La access key se inyecta en build-time desde Infisical vía GitHub Actions OIDC; en local se usa el fallback hardcoded.
+- Los secretos se gestionan en Infisical (proyecto `alitrio.com`). GitHub Actions se autentica con OIDC (Machine Identity), sin tokens estáticos.
 
 ## Documentación
 
