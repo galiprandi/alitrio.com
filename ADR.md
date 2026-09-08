@@ -39,3 +39,22 @@ El `mailto:` de ADR-001 no entrega de forma confiable: requiere un cliente de co
 - No hay tokens estáticos en GitHub Secrets; la autenticación es efímera vía OIDC.
 - La access key de Web3Forms es visible en el HTML del sitio (por diseño de Web3Forms); la rotación se gestiona desde Infisical.
 - El spam protection de Web3Forms se configuró en `Basic` (no `Strict`) para evitar falsos positivos en submissions legítimas.
+
+## ADR-003 — Cloudflare Email Routing para contact@alitrio.com
+
+**Status:** Accepted  
+**Date:** 2026-09-08
+
+### Context
+
+Se necesita una dirección profesional `contact@alitrio.com` que redirija los emails a `galiprandi@gmail.com`, sin necesidad de un mailbox propio o Google Workspace.
+
+### Decision
+
+Usar **Cloudflare Email Routing** (gratis) para reenviar `contact@alitrio.com` → `galiprandi@gmail.com`. Cloudflare gestiona los MX records del dominio automáticamente.
+
+### Consequences
+
+- Los emails enviados a `contact@alitrio.com` llegan a `galiprandi@gmail.com`.
+- No se puede enviar *como* `contact@alitrio.com` desde Gmail (solo recibir). Para enviar, se necesitaría Google Workspace o SMTP propio.
+- Los DNS records de email están locked por Cloudflare.
