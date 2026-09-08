@@ -23,6 +23,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Fetch secrets from Infisical
+        uses: Infisical/secrets-action@v1.0.9
+        with:
+          method: "oidc"
+          identity-id: "d9e3d4bf-fe64-4aa5-a917-20b8af2b7f48"
+          project-slug: "alitrio-com-nz-ck"
+          env-slug: "prod"
+          oidc-audience: "https://github.com/galiprandi"
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
