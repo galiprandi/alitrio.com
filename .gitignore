@@ -17,3 +17,7 @@ pnpm-debug.log*
 # editor
 .vscode/
 .idea/
+# local visual-review evidence
+.impeccable/review/
+.impeccable/hook.cache.json
+.playwright-cli/

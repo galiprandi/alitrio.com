@@ -1,6 +1,6 @@
 # alitrio.com
 
-Landing page de **ALITRIO** — consultora tecnológica familiar.
+Landing page de **ALITRIO** — consultora tecnológica especializada en transformación organizacional con IA.
 
 ## Stack
 - [Astro](https://astro.build) — static site generator

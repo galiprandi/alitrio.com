@@ -1,50 +1,63 @@
 ---
-// ALITRIO — coming soon landing
+const contactEmail = 'contact@alitrio.com';
 ---
 
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ALITRIO — consultora tecnológica familiar." />
-    <title>ALITRIO</title>
+    <meta name="description" content="Alitrio transforma organizaciones en AI Companies, área por área." />
+    <meta name="theme-color" content="#102633" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23102633'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%230b9292'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Alitrio — AI Company transformation</title>
   </head>
   <body>
-    <main>
-      <h1>alitrio.com</h1>
-      <p>coming soon</p>
+    <!-- THESIS: Alitrio makes organizational AI adoption legible as a deliberate operating system, refusing the generic AI-consulting hero. OWN-WORLD: sunlit paper, deep ink, cobalt structure and mineral green signals; editorial typography, ruled process lines and open fields. STORY: a leader sees a practical path from current operations to AI-centered work, understands the services and starts a conversation. FIRST VIEWPORT: a restrained wordmark and language switch sit above an oversized statement; a transformation diagram occupies the opposing field and the CTA anchors the lower edge. FORM: user-pinned “Cambio estructurado”, grounded candidate; seed d8ab768f. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance. -->
+    <a class="skip" href="#main" data-lang="es">Ir al contenido</a><a class="skip" href="#main" data-lang="en" hidden>Skip to content</a>
+    <header>
+      <a class="brand" href="#top" aria-label="Alitrio home">ALITRIO<span>.</span></a>
+      <nav aria-label="Primary navigation"><a href="#services" data-lang="es">Qué hacemos</a><a href="#method" data-lang="es">Cómo trabajamos</a><a href="#contact" data-lang="es">Contacto</a><a href="#services" data-lang="en" hidden>What we do</a><a href="#method" data-lang="en" hidden>How we work</a><a href="#contact" data-lang="en" hidden>Contact</a></nav>
+      <div class="switch" aria-label="Language selector"><button type="button" data-language="es" aria-pressed="true">ES</button><button type="button" data-language="en" aria-pressed="false">EN</button></div>
+    </header>
+    <main id="main">
+      <section class="hero" id="top">
+        <div>
+          <h1 data-lang="es">Te transformamos en una <em>AI Company.</em></h1><h1 data-lang="en" hidden>We turn you into an <em>AI Company.</em></h1>
+          <p class="summary" data-lang="es">Adaptamos tu organización a la era IA, poniendo la inteligencia artificial en el centro de cada área.</p><p class="summary" data-lang="en" hidden>We adapt your organization to the AI era, putting artificial intelligence at the center of every area.</p>
+          <a class="action" href="#contact" data-lang="es">Hablemos <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 2v11M4 9l4 4 4-4" /></svg></a><a class="action" href="#contact" data-lang="en" hidden>Let’s talk <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 2v11M4 9l4 4 4-4" /></svg></a>
+        </div>
+        <div class="map" data-lang="es" aria-label="Proceso de transformación"><span class="start">Hoy</span><span class="end">AI Company</span><i></i><b class="one">Operación</b><b class="two">Equipos</b><b class="three">Procesos</b><p>La IA no se suma.<br />Se vuelve central.</p></div>
+        <div class="map" data-lang="en" hidden aria-label="Transformation process"><span class="start">Today</span><span class="end">AI Company</span><i></i><b class="one">Operations</b><b class="two">Teams</b><b class="three">Processes</b><p>AI is not an add-on.<br />It becomes central.</p></div>
+      </section>
+      <section class="section services" id="services">
+        <div class="heading"><h2 data-lang="es">Una adopción que cambia cómo trabaja tu empresa.</h2><h2 data-lang="en" hidden>An adoption that changes how your company works.</h2><p data-lang="es">El Programa AI Company convierte la IA en parte de la operación, no en una herramienta aislada.</p><p data-lang="en" hidden>The AI Company Program makes AI part of your operation, not an isolated tool.</p></div>
+        <div class="list">
+          <article><h3 data-lang="es">Asesoría en licenciamiento e implementación de IA</h3><h3 data-lang="en" hidden>AI licensing and implementation advisory</h3><p data-lang="es">Te ayudamos a elegir las herramientas y licencias que más convienen a tu empresa.</p><p data-lang="en" hidden>We help you choose the tools and licenses that best fit your company.</p></article>
+          <article><h3 data-lang="es">Plan de implementación</h3><h3 data-lang="en" hidden>Implementation plan</h3><p data-lang="es">Diseñamos un plan de adopción a medida, por área, con complejidad incremental.</p><p data-lang="en" hidden>We design a tailored adoption plan, by area, with incremental complexity.</p></article>
+          <article><h3 data-lang="es">Revisión y auditoría</h3><h3 data-lang="en" hidden>Review and audit</h3><p data-lang="es">Auditamos tu organización para identificar qué procesos se pueden transformar.</p><p data-lang="en" hidden>We audit your organization to identify which processes can be transformed.</p></article>
+          <article><h3 data-lang="es">Capacitación</h3><h3 data-lang="en" hidden>Training</h3><p data-lang="es">Sesiones prácticas por área. Tu equipo aprende usando, no escuchando teoría.</p><p data-lang="en" hidden>Hands-on sessions by area. Your team learns by doing, not by listening to theory.</p></article>
+        </div>
+      </section>
+      <section class="method section" id="method"><div class="heading"><h2 data-lang="es">La transformación se construye con tu equipo.</h2><h2 data-lang="en" hidden>Transformation is built with your team.</h2></div><ol data-lang="es"><li><strong>Complejidad incremental.</strong> Cada paso introduce algo nuevo, partiendo de lo que tu equipo ya sabe.</li><li><strong>Enfoque por área.</strong> Transformamos área por área, no todo a la vez.</li><li><strong>Soporte durante la implementación.</strong> Te acompañamos en todo el proceso.</li><li><strong>Resultados medibles.</strong> Cada área tiene flujos automatizados funcionando al finalizar.</li></ol><ol data-lang="en" hidden><li><strong>Incremental complexity.</strong> Each step introduces something new, building on what your team already knows.</li><li><strong>Area-focused.</strong> We transform area by area, not all at once.</li><li><strong>Support during implementation.</strong> We’re with you throughout the process.</li><li><strong>Measurable results.</strong> Every area has automated workflows running by the end.</li></ol></section>
+      <section class="audience"><p data-lang="es">Para compañías de hasta 300 empleados.</p><p data-lang="en" hidden>For companies of up to 300 employees.</p><h2 data-lang="es">Si tu equipo trabaja con información, comunicaciones o procesos, la IA puede transformar cómo opera.</h2><h2 data-lang="en" hidden>If your teams work with information, communication or processes, AI can transform how you operate.</h2></section>
+      <section class="contact section" id="contact"><div class="contact-copy"><h2 data-lang="es">Hablemos.</h2><h2 data-lang="en" hidden>Let’s talk.</h2><p data-lang="es">Contanos en qué momento está tu organización. Empecemos por ahí.</p><p data-lang="en" hidden>Tell us where your organization is today. We’ll start there.</p></div><form action={`mailto:${contactEmail}`} method="post" enctype="text/plain" novalidate><div class="row"><label><span data-lang="es">Nombre</span><span data-lang="en" hidden>Name</span><input name="name" autocomplete="name" required placeholder="Tu nombre" data-placeholder-es="Tu nombre" data-placeholder-en="Your name" /></label><label>Email<input name="email" type="email" autocomplete="email" required placeholder="Tu email" data-placeholder-es="Tu email" data-placeholder-en="Your email" /></label></div><label><span data-lang="es">Empresa <small>(opcional)</small></span><span data-lang="en" hidden>Company <small>(optional)</small></span><input name="company" autocomplete="organization" placeholder="Tu empresa" data-placeholder-es="Tu empresa" data-placeholder-en="Your company" /></label><label><span data-lang="es">Mensaje</span><span data-lang="en" hidden>Message</span><textarea name="message" rows="5" required placeholder="Contanos qué necesitás" data-placeholder-es="Contanos qué necesitás" data-placeholder-en="Tell us what you need"></textarea></label><button class="action" type="submit"><span data-lang="es">Enviar</span><span data-lang="en" hidden>Send</span> <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3 13 13 3M6 3h7v7" /></svg></button><p class="status" aria-live="polite"></p></form></section>
     </main>
+    <footer><a class="brand" href="#top">ALITRIO<span>.</span></a><p data-lang="es">Transformación organizacional con IA.</p><p data-lang="en" hidden>Organizational transformation with AI.</p></footer>
+    <script>
+      const nodes = document.querySelectorAll('[data-lang]'), buttons = document.querySelectorAll('[data-language]'), fields = document.querySelectorAll('[data-placeholder-es]'), form = document.querySelector('form'), status = document.querySelector('.status');
+      const copy = { es: { title: 'Alitrio — Transformación organizacional con IA', description: 'Alitrio transforma organizaciones en AI Companies, área por área.', status: 'Abrimos tu aplicación de correo para continuar el contacto.' }, en: { title: 'Alitrio — AI Company transformation', description: 'Alitrio turns organizations into AI Companies, one area at a time.', status: 'We opened your email app to continue the conversation.' } };
+      function setLanguage(lang) { document.documentElement.lang = lang; document.title = copy[lang].title; document.querySelector('meta[name="description"]')?.setAttribute('content', copy[lang].description); nodes.forEach((node) => node.hidden = node.dataset.lang !== lang); buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.language === lang))); fields.forEach((field) => field.placeholder = field.dataset[`placeholder${lang[0].toUpperCase()}${lang.slice(1)}`]); const url = new URL(location.href); lang === 'en' ? url.searchParams.set('lang', 'en') : url.searchParams.delete('lang'); history.replaceState({}, '', url); }
+      setLanguage(new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'es'); buttons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+      form?.addEventListener('submit', (event) => { if (!form.checkValidity()) { event.preventDefault(); form.reportValidity(); return; } event.preventDefault(); const lang = document.documentElement.lang, data = new FormData(form), labels = lang === 'es' ? { name: 'Nombre', email: 'Email', company: 'Empresa', message: 'Mensaje' } : { name: 'Name', email: 'Email', company: 'Company', message: 'Message' }; const body = ['name','email','company','message'].filter((key) => data.get(key)).map((key) => `${labels[key]}: ${data.get(key)}`).join('\n\n'); status.textContent = copy[lang].status; location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(lang === 'es' ? 'Consulta desde alitrio.com' : 'Inquiry from alitrio.com')}&body=${encodeURIComponent(body)}`; });
+    </script>
   </body>
 </html>
 
 <style>
-  :global(html, body) {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: #0a0a0a;
-    color: #fafafa;
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  h1 {
-    font-size: clamp(2rem, 6vw, 4rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin: 0 0 0.5rem;
-  }
-  p {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-    color: #a1a1aa;
-    text-transform: lowercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-  }
+  :global(*){box-sizing:border-box}:global([hidden]){display:none!important}:global(html){scroll-behavior:smooth}:global(body){margin:0;background:#f5f3ed;color:#102633;font-family:Manrope,system-ui,sans-serif}:global(::selection){background:#aee8d7}:global(:focus-visible){outline:3px solid #147e83;outline-offset:4px}h1,h2,h3,p{margin-top:0}h1,h2,h3,.brand{font-family:'DM Sans',sans-serif}.action svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75}.method ol{counter-reset:none}.method li{counter-increment:none}.method li::before{content:none;display:none}.skip{position:fixed;z-index:4;transform:translateY(-200%);top:1rem;left:1rem;background:#102633;color:#fff;padding:.8rem;text-decoration:none}.skip:focus{transform:translateY(0)}header,footer{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.5rem;max-width:1440px;margin:auto;padding:1.4rem clamp(1.25rem,4vw,4.5rem)}.brand{color:#102633;font-size:1.35rem;font-weight:800;letter-spacing:-.06em;text-decoration:none}.brand span{color:#0b9292}nav{display:flex;justify-content:center;gap:clamp(.8rem,2vw,2rem)}nav a{color:#46606a;font-size:.78rem;font-weight:700;text-decoration:none}.switch{display:flex;padding:.2rem;border:1px solid #b8c2bd;border-radius:99px}.switch button{border:0;border-radius:99px;background:transparent;color:#46606a;font-weight:800;font-size:.7rem;padding:.45rem .6rem}.switch [aria-pressed=true]{background:#102633;color:#fff}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2.5rem,7vw,8rem);max-width:1440px;min-height:min(760px,calc(100vh - 5rem));margin:auto;padding:clamp(4.5rem,10vw,9rem) clamp(1.25rem,8vw,9rem);align-items:center}.overline{color:#147e83;font-weight:800;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}.hero h1{max-width:10ch;font-size:clamp(3.35rem,7.4vw,6rem);font-weight:700;letter-spacing:-.055em;line-height:.95;margin-bottom:1.6rem}.hero em{color:#0b9292;font-style:normal}.summary,.contact-copy p{max-width:52ch;color:#46606a;line-height:1.7}.action{display:inline-flex;gap:.8rem;align-items:center;border:0;background:#102633;color:#fff;cursor:pointer;font:700 .9rem/1 Manrope,sans-serif;padding:1rem 1.25rem;text-decoration:none;transition:.2s ease}.action:hover{background:#147e83;transform:translateY(-2px)}.map{position:relative;min-height:395px;overflow:hidden;border-top:1px solid #8ba19e;border-bottom:1px solid #8ba19e}.map span{position:absolute;top:1rem;color:#46606a;font-size:.67rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.map .start{left:0}.map .end{right:0;color:#0b9292}.map i{position:absolute;top:50%;width:100%;border-top:1px dashed #8ba19e}.map b{position:absolute;display:grid;place-items:end start;background:#d9ebe2;padding:1rem;font-size:.75rem;letter-spacing:.04em;transition:transform .6s cubic-bezier(.16,1,.3,1)}.map .one{top:4.6rem;left:8%;width:42%;height:33%}.map .two{right:2%;bottom:4.8rem;width:58%;height:30%;background:#add8d5}.map .three{right:18%;top:31%;width:34%;height:36%;background:#77bbb5}.map:hover .one{transform:translate(1rem,-.5rem)}.map:hover .two{transform:translate(-.8rem,.7rem)}.map:hover .three{transform:translate(.6rem,-.8rem)}.map p{position:absolute;right:0;bottom:.8rem;font:700 clamp(1.1rem,2vw,1.55rem)/1.08 'DM Sans';letter-spacing:-.04em;text-align:right}.section{max-width:1440px;margin:auto;padding:clamp(5rem,11vw,10rem) clamp(1.25rem,8vw,9rem)}.heading{display:grid;grid-template-columns:1.1fr .65fr;gap:2rem;margin-bottom:clamp(3rem,6vw,5.5rem)}h2{max-width:15ch;font-size:clamp(2.1rem,4.5vw,4.15rem);line-height:.98;letter-spacing:-.052em}.heading p{color:#46606a;line-height:1.7}.services{border-top:1px solid #b8c2bd}.list{border-top:1px solid #102633}.list article{display:grid;grid-template-columns:1fr .8fr;gap:2rem;border-bottom:1px solid #b8c2bd;padding:1.5rem 0;transition:.2s}.list article:hover{background:#e9ede7;padding-inline:1rem}.list h3{font-size:clamp(1.2rem,2vw,1.65rem);letter-spacing:-.035em}.list p{color:#46606a;line-height:1.6}.method{max-width:none;background:#e2e9e3}.method .heading{grid-template-columns:1fr}.method ol{display:grid;grid-template-columns:repeat(4,1fr);padding:0;list-style:none}.method li{border-top:1px solid #8ba19e;color:#46606a;counter-increment:step;font-size:.94rem;line-height:1.65;padding:1.25rem 1.3rem 0}.method ol{counter-reset:step}.method li::before{content:'0' counter(step);display:block;color:#0b9292;font-size:.72rem;font-weight:800;letter-spacing:.08em;margin-bottom:2.7rem}.method strong{color:#102633}.audience{background:#102633;color:#f5f3ed;padding:clamp(5rem,12vw,10rem) clamp(1.25rem,8vw,9rem)}.audience p{color:#aee8d7;font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.audience h2{color:#f5f3ed;max-width:20ch}.contact{display:grid;grid-template-columns:.75fr 1fr;gap:clamp(3rem,9vw,10rem)}.contact h2{font-size:clamp(3rem,5vw,5rem)}form{display:grid;gap:1.4rem}.row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}label{display:grid;gap:.55rem;color:#102633;font-size:.78rem;font-weight:800;letter-spacing:.04em}label small{color:#46606a}input,textarea{width:100%;resize:vertical;border:0;border-bottom:1px solid #8ba19e;background:transparent;color:#102633;font:500 1rem/1.4 Manrope;padding:.65rem 0}input::placeholder,textarea::placeholder{color:#61777b;opacity:1}input:focus,textarea:focus{outline:0;border-color:#0b9292}.status{min-height:1.4em;color:#46606a;font-size:.84rem}footer{border-top:1px solid #b8c2bd;color:#46606a;font-size:.78rem}footer p{margin:0}@media(max-width:760px){header{grid-template-columns:1fr auto}nav{display:none}.hero,.contact{grid-template-columns:1fr}.hero{min-height:auto}.heading{grid-template-columns:1fr}.list article{grid-template-columns:1fr;gap:.8rem}.method ol{grid-template-columns:1fr 1fr;gap:2rem 0}.row{grid-template-columns:1fr}footer{grid-template-columns:1fr;gap:.8rem}}@media(max-width:440px){.method ol{grid-template-columns:1fr}.method li::before{margin-bottom:1rem}}@media(prefers-reduced-motion:reduce){:global(html){scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+  .method ol{counter-reset:none}.method li{counter-increment:none}.method li::before{content:none;display:none}
 </style>
