@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f3ed"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#0b9292"/>
+  <text x="80" y="140" font-family="'DM Sans', sans-serif" font-size="42" font-weight="800" letter-spacing="-0.04em" fill="#102633">ALITRIO<tspan fill="#0b9292">.</tspan></text>
+  <text x="80" y="330" font-family="'DM Sans', sans-serif" font-size="84" font-weight="700" letter-spacing="-0.05em" fill="#102633">Te transformamos</text>
+  <text x="80" y="420" font-family="'DM Sans', sans-serif" font-size="84" font-weight="700" letter-spacing="-0.05em" fill="#102633">en una <tspan fill="#0b9292">AI Company.</tspan></text>
+  <text x="80" y="500" font-family="'Manrope', sans-serif" font-size="28" font-weight="500" fill="#46606a">Programa de transformación con IA para empresas.</text>
+  <rect x="80" y="540" width="160" height="4" fill="#0b9292"/>
+</svg>

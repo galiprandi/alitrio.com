@@ -60,23 +60,23 @@ El formulario puede postear a un endpoint simple (Formspree, Netlify Forms, o si
 
 **Hero:**
 - Título: "Te transformamos en una AI Company."
-- Subtítulo: "Adaptamos tu organización a la era IA, poniendo la inteligencia artificial en el centro de cada área."
+- Subtítulo: "La IA ya cambió las reglas. La hacemos parte de cómo trabaja cada área de tu empresa, con resultados que se ven."
 - CTA: "Hablemos"
 
 **Qué hacemos:**
-- "Asesoría en licenciamiento e implementación de IA" — "Te ayudamos a elegir las herramientas y licencias que más convienen a tu empresa."
-- "Plan de implementación" — "Diseñamos un plan de adopción a medida, por área, con complejidad incremental."
-- "Revisión y auditoría" — "Auditamos tu organización para identificar qué procesos se pueden transformar."
-- "Capacitación" — "Sesiones prácticas por área. Tu equipo aprende usando, no escuchando teoría."
+- "Las herramientas correctas para tu empresa" — "Seleccionamos e implementamos las herramientas de IA que mejor encajan con tu operación. No forzamos un ecosistema: elegimos lo que funciona para vos."
+- "Un plan que no para tu operación" — "Diseñamos un plan de adopción por área, un paso a la vez. Tu empresa sigue trabajando mientras se transforma."
+- "Sabemos qué transformar primero" — "Auditamos tu organización para encontrar dónde la IA genera más valor, en qué orden y con qué resultados."
+- "Tu equipo aprende haciendo" — "Sesiones prácticas por área, con casos reales. Tu equipo sale usando IA, no escuchando teoría."
 
 **Cómo trabajamos:**
-- "Complejidad incremental: cada paso introduce algo nuevo, partiendo de lo que tu equipo ya sabe."
-- "Enfoque por área: transformamos área por área, no todo a la vez."
-- "Soporte durante la implementación: te acompañamos en todo el proceso."
-- "Resultados medibles: cada área tiene flujos automatizados funcionando al finalizar."
+- "Un paso a la vez: cada paso construye sobre lo que tu equipo ya sabe. Sin saltos bruscos ni parálisis."
+- "Área por área, no todo a la vez: transformamos un área a la vez. Tu empresa sigue operando mientras cambia."
+- "Acompañamiento real: estamos con vos en cada paso de la implementación, no solo en las sesiones."
+- "Resultados que se ven: cada área termina con flujos automatizados funcionando. No promesas: procesos reales."
 
 **Para quién:**
-- "Compañías de hasta 300 empleados que quieren adaptarse a la era IA."
+- "Para compañías de hasta 300 empleados. Si tu equipo trabaja con información, comunicaciones o procesos, la IA ya puede transformar cómo opera."
 
 **Formulario:**
 - Título: "Hablemos"
@@ -90,23 +90,23 @@ El formulario puede postear a un endpoint simple (Formspree, Netlify Forms, o si
 
 **Hero:**
 - Title: "We turn you into an AI Company."
-- Subtitle: "We adapt your organization to the AI era, putting artificial intelligence at the center of every area."
+- Subtitle: "AI has changed the rules. We make it part of how every area of your company works, with visible results."
 - CTA: "Let's talk"
 
 **What we do:**
-- "AI licensing and implementation advisory" — "We help you choose the tools and licenses that best fit your company."
-- "Implementation plan" — "We design a tailored adoption plan, by area, with incremental complexity."
-- "Review and audit" — "We audit your organization to identify which processes can be transformed."
-- "Training" — "Hands-on sessions by area. Your team learns by doing, not by listening to theory."
+- "The right tools for your company" — "We select and implement the AI tools that best fit your operation. No forced ecosystem — we choose what works for you."
+- "A plan that doesn't stop your operation" — "We design an adoption plan by area, one step at a time. Your company keeps running while it transforms."
+- "We know what to transform first" — "We audit your organization to find where AI creates the most value, in what order, and with what results."
+- "Your team learns by doing" — "Hands-on sessions by area, with real cases. Your team leaves using AI, not listening to theory."
 
 **How we work:**
-- "Incremental complexity: each step introduces something new, building on what your team already knows."
-- "Area-focused: we transform area by area, not all at once."
-- "Support during implementation: we're with you throughout the process."
-- "Measurable results: every area has automated workflows running by the end."
+- "One step at a time: each step builds on what your team already knows. No sudden leaps, no paralysis."
+- "Area by area, not all at once: we transform one area at a time. Your company keeps running while it changes."
+- "Real support: we're with you at every step of implementation, not just in sessions."
+- "Visible results: every area ends with automated workflows running. Not promises: real processes."
 
 **Who it's for:**
-- "Companies of up to 300 employees looking to adapt to the AI era."
+- "For companies of up to 300 employees. If your teams work with information, communication or processes, AI can already transform how you operate."
 
 **Form:**
 - Title: "Let's talk"

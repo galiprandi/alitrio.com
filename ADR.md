@@ -17,6 +17,25 @@ Implementar ambas variantes de contenido y el selector de idioma dentro de `src/
 
 La página no requiere infraestructura adicional. El estado de entrega del correo no puede confirmarse desde el sitio y el cambio de idioma se resuelve del lado del cliente.
 
+## ADR-004 — Copy en registro de resultados, SEO y accesibilidad
+
+**Status:** Accepted  
+**Date:** 2026-09-08
+
+### Context
+
+La landing original usaba un registro técnico ("licenciamiento", "complejidad incremental") dirigido a un lector que conoce el stack. El ICP confirmado es CEO/fundador de SMB LATAM no técnico, cuyo dolor principal es FOMO (miedo a quedarse atrás). El SEO on-page era mínimo (title y meta description genéricos, sin hreflang, canonical, structured data ni sitemap). El signal-teal (#0b9292) no cumplía WCAG AA para texto small (3.42:1 sobre paper).
+
+### Decision
+
+1. **Copy:** reescribir títulos de servicios, bullets del método y subtítulo del hero a registro de resultados, anclando en el dolor FOMO del CEO. Mantener el eslogan de marca.
+2. **SEO:** ES como idioma default con EN alternate (hreflang es/en/x-default), canonical, OG/Twitter cards, JSON-LD ProfessionalService, robots.txt y sitemap.xml. Title y meta optimizados para brand-building "AI Company" + keywords categoriales.
+3. **Accesibilidad:** oscurecer signal-teal de #0b9292 a #0a7172 (5.23:1 sobre paper) para cumplir WCAG AA en texto small. Oscurecer placeholder de #61777b a #55727c (4.63:1).
+
+### Consequences
+
+El copy es más directo y orientado a resultados, pero pierde parte del lenguaje técnico que podía transmitir expertise a un lector sofisticado. El SEO on-page está completo para una landing de una sola página. El cambio de token de color es retroactivo en todo el design system.
+
 ## ADR-002 — Formulario de contacto con Web3Forms + Infisical OIDC
 
 **Status:** Accepted  

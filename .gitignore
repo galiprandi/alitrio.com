@@ -21,3 +21,9 @@ pnpm-debug.log*
 .impeccable/review/
 .impeccable/hook.cache.json
 .playwright-cli/
+.playwright-mcp/
+*.screenshot.png
+desktop-*.png
+mobile-*.png
+map-*.png
+alitrio-coming-soon.png

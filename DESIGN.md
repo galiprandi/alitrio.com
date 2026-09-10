@@ -4,7 +4,7 @@ description: Landing editorial para la transformación organizacional con IA.
 colors:
   paper: "#f5f3ed"
   ink: "#102633"
-  signal-teal: "#0b9292"
+  signal-teal: "#0a7172"
   active-teal: "#147e83"
   muted-ink: "#46606a"
   mint-highlight: "#aee8d7"
@@ -17,15 +17,15 @@ colors:
 typography:
   display:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "clamp(3.35rem, 7.4vw, 6rem)"
+    fontSize: "clamp(3.35rem, 6.8vw, 5rem)"
     fontWeight: 700
-    lineHeight: 0.95
-    letterSpacing: "-0.055em"
+    lineHeight: 1.0
+    letterSpacing: "-0.04em"
   headline:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "clamp(2.1rem, 4.5vw, 4.15rem)"
-    lineHeight: 0.98
-    letterSpacing: "-0.052em"
+    fontSize: "clamp(2.1rem, 4vw, 3.5rem)"
+    lineHeight: 1.05
+    letterSpacing: "-0.03em"
   body:
     fontFamily: "Manrope, system-ui, sans-serif"
     fontSize: "1rem"
@@ -108,10 +108,10 @@ La paleta combina un fondo de papel cálido con tinta azul verdosa; los verdes m
 
 ### Hierarchy
 
-- **Display:** titular hero en 700, `clamp(3.35rem, 7.4vw, 6rem)`, interlineado 0.95 y tracking -0.055em; limitar a 10ch.
-- **Headline:** secciones en `clamp(2.1rem, 4.5vw, 4.15rem)`, interlineado 0.98 y tracking -0.052em; limitar a 15ch (20ch en audiencia).
-- **Title:** servicios en DM Sans, `clamp(1.2rem, 2vw, 1.65rem)`, tracking -0.035em.
-- **Body:** Manrope medio, 1rem, interlineado 1.6–1.7; resúmenes a 52ch.
+- **Display:** titular hero en 700, `clamp(3.35rem, 6.8vw, 5rem)`, interlineado 1.0 y tracking -0.04em; limitar a 10ch.
+- **Headline:** secciones en `clamp(2.1rem, 4vw, 3.5rem)`, interlineado 1.05 y tracking -0.03em; limitar a 15ch (20ch en audiencia). Contacto en `clamp(2.5rem, 4.5vw, 4rem)`.
+- **Title:** servicios en DM Sans, `clamp(1.2rem, 2vw, 1.65rem)`, tracking -0.025em, interlineado 1.2.
+- **Body:** Manrope medio, 1rem, interlineado 1.6–1.7; resúmenes a 58ch.
 - **Label:** Manrope 800, 0.78rem, tracking 0.04em; las etiquetas operativas del mapa usan mayúsculas, 0.67–0.76rem y tracking 0.08em.
 
 ## Layout
@@ -134,7 +134,7 @@ La geometría es recta y editorial: CTA, campos, listas y diagrama no llevan rad
 
 ### Navigation
 
-Marca en DM Sans 800 a 1.35rem, con punto verde señal y tracking -0.06em. Los enlaces centrados usan Manrope 700 a 0.78rem en tinta atenuada. La navegación desaparece en móvil; el selector ES/EN permanece visible y expresa selección mediante fondo tinta y texto blanco con `aria-pressed`.
+Marca en DM Sans 800 a 1.35rem, con punto verde señal y tracking -0.04em. Los enlaces centrados usan Manrope 700 a 0.78rem en tinta atenuada. La navegación desaparece en móvil; el selector ES/EN permanece visible y expresa selección mediante fondo tinta y texto blanco con `aria-pressed`.
 
 ### Buttons
 
@@ -142,7 +142,7 @@ La acción es un rectángulo de tinta con texto blanco, icono lineal de 1rem y p
 
 ### Process Map
 
-El mapa hero se encierra solo entre reglas horizontales y una guía discontinua central. Tres bloques minerales de escala y posición distintas representan Operación, Equipos y Procesos; en hover se desplazan de forma medida (0.6–1rem) con una curva `cubic-bezier(.16,1,.3,1)` de 0.6s. Debe conservarse como explicación espacial del cambio, no como decoración abstracta.
+El mapa hero se encierra entre reglas horizontales y se divide en tres columnas: estado actual ("Hoy"), flecha de transformación y estado futuro ("AI Company"). A la izquierda, tres bloques separados y pálidos (Operación, Equipos, Procesos) representan las áreas desconectadas. A la derecha, los mismos tres bloques convergen y se solapan alrededor de un núcleo oscuro "IA" que los une, visualizando que la IA se vuelve central. En hover, los bloques del cluster se desplazan levemente (0.3–0.4rem) con una curva `cubic-bezier(.16,1,.3,1)` de 0.6s. Debe conservarse como explicación espacial del cambio, no como decoración abstracta.
 
 ### Service List
 
