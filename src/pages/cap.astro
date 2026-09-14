@@ -1,354 +1,219 @@
 ---
-// CAP — Certified AI Professional
+const siteUrl = 'https://alitrio.com';
+const contactEmail = 'contact@alitrio.com';
 ---
 
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Certified AI Professional (CAP) — Programa de empoderamiento digital para directivos. Alitrio." />
     <title>CAP — Certified AI Professional | Alitrio</title>
+    <meta name="description" content="Programa Certified AI Professional (CAP). Empoderamiento digital para directivos con Google Workspace, Gemini y Antigravity. Design Sprint adaptado." />
+    <meta name="theme-color" content="#102633" />
+    <link rel="canonical" href={`${siteUrl}/cap`} />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23102633'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%230b9292'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <main>
-      <header>
-        <a href="/" class="logo">alitrio</a>
-        <span class="tag">CAP</span>
-      </header>
-
+    <a class="skip" href="#main">Ir al contenido</a>
+    <header>
+      <a class="brand" href="/" aria-label="Alitrio home">ALITRIO<span>.</span></a>
+      <nav aria-label="Primary navigation"><a href="/#services">Qué hacemos</a><a href="/#method">Cómo trabajamos</a><a href="/#contact">Contacto</a></nav>
+    </header>
+    <main id="main">
       <section class="hero">
-        <h1>Certified AI Professional</h1>
-        <p class="subtitle">Empoderamiento digital para directivos</p>
-        <p class="desc">
-          Un programa práctico donde los participantes construyen soluciones a sus propios problemas cotidianos usando Google Workspace, Gemini y Antigravity.
-        </p>
-        <p class="desc">
-          No es capacitación genérica. Es un design sprint adaptado donde cada directivo sale con herramientas propias funcionando.
-        </p>
+        <div>
+          <p class="overline">Certified AI Professional</p>
+          <h1>Que cada directivo construya sus <em>propias herramientas.</em></h1>
+          <p class="summary">Un programa práctico donde los participantes trabajan sobre sus dolores reales y salen con soluciones funcionando. No es capacitación genérica: es un design sprint adaptado con Google Workspace, Gemini y Antigravity.</p>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>El problema</h2>
-        <p>
-          Los directivos pierden horas semanales en tareas repetitivas que podrían automatizarse.
-          Pero no son desarrolladores, y esperar a IT tiene un costo de oportunidad.
-        </p>
-        <p>
-          CAP les da la capacidad de crear sus propias herramientas sin saber programar.
-        </p>
+      <section class="section problem">
+        <div class="heading">
+          <h2>El problema</h2>
+          <p>Los directivos pierden horas semanales en tareas repetitivas que podrían automatizarse. Pero no son desarrolladores, y esperar a IT tiene un costo de oportunidad.</p>
+        </div>
+        <p class="lead">CAP les da la capacidad de crear sus propias herramientas sin saber programar.</p>
       </section>
 
-      <section class="section">
-        <h2>Cómo funciona</h2>
+      <section class="section phases-section">
+        <div class="heading">
+          <h2>Cómo funciona</h2>
+          <p>Cuatro fases. Sesiones de 1.5 horas, una por semana. El formato grupal multiplica valor: la solución de uno resuena en otros.</p>
+        </div>
         <div class="phases">
-          <div class="phase">
-            <div class="phase-num">01</div>
+          <article>
+            <span class="phase-num">01</span>
             <h3>Discovery</h3>
             <p>Cada participante expone sus dolores reales con datos de tiempos. El grupo debate soluciones. Gemini actúa como sparring en vivo.</p>
-          </div>
-          <div class="phase">
-            <div class="phase-num">02</div>
+          </article>
+          <article>
+            <span class="phase-num">02</span>
             <h3>Agrupación</h3>
             <p>Identificamos patrones. Los dolores de uno suelen ser los dolores de todos. Priorizamos juntos.</p>
-          </div>
-          <div class="phase">
-            <div class="phase-num">03</div>
+          </article>
+          <article>
+            <span class="phase-num">03</span>
             <h3>Construcción</h3>
             <p>Cada participante construye su solución con Gemini y Antigravity. Hands-on, guiado, con compliance check contextual.</p>
-          </div>
-          <div class="phase">
-            <div class="phase-num">04</div>
+          </article>
+          <article>
+            <span class="phase-num">04</span>
             <h3>Certificación</h3>
             <p>Cada participante presenta su herramienta. Recibe el certificado Certified AI Professional con la evidencia de lo construido.</p>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="section">
-        <h2>Qué los participantes obtienen</h2>
-        <ul class="deliverables">
-          <li>Herramientas propias funcionando, construidas durante el programa</li>
-          <li>Kanban persistente en Miro como artefacto de referencia</li>
-          <li>Capacidad de seguir construyendo soluciones solo después del programa</li>
-          <li>Certificado Certified AI Professional (CAP) emitido por Alitrio</li>
-        </ul>
+      <section class="section deliverables-section">
+        <div class="heading">
+          <h2>Qué obtienen los participantes</h2>
+        </div>
+        <div class="list">
+          <article><h3>Herramientas propias funcionando</h3><p>Construidas durante el programa, sobre sus dolores reales.</p></article>
+          <article><h3>Kanban persistente en Miro</h3><p>Artefacto de referencia. Vuelven cuando necesitan.</p></article>
+          <article><h3>Capacidad de seguir construyendo</h3><p>Solos, después del programa. Sin depender de IT.</p></article>
+          <article><h3>Certificado CAP</h3><p>Certified AI Professional emitido por Alitrio, con evidencia de lo construido.</p></article>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>Metodología</h2>
-        <p>
-          Adaptación del Design Sprint de Jake Knapp (creador de la metodología en Google).
-          Sesiones de 1.5 horas, una por semana, con pre-work estructurado.
-          El formato grupal multiplica valor: la solución de uno resuena en otros.
-        </p>
+      <section class="section method-section">
+        <div class="heading">
+          <h2>Metodología</h2>
+          <p>Adaptación del Design Sprint de Jake Knapp, creador de la metodología en Google. El formato sprint funciona con directivos porque es dinámico, visual, colaborativo y produce resultados tangibles.</p>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>Herramientas</h2>
+      <section class="section tools-section">
+        <div class="heading">
+          <h2>Herramientas</h2>
+        </div>
         <div class="tools">
-          <div class="tool">
-            <h3>Google Workspace</h3>
-            <p>Gmail, Calendar, Docs, Sheets, Drive, Meet. La base sobre la que trabajan.</p>
-          </div>
-          <div class="tool">
-            <h3>Gemini</h3>
-            <p>Asistente ejecutivo para resumir, redactar, analizar y debatir soluciones.</p>
-          </div>
-          <div class="tool">
-            <h3>Antigravity</h3>
-            <p>IDE agent-first de Google. El agente codea por vos. Vos definís el qué y el para qué.</p>
-          </div>
-          <div class="tool">
-            <h3>Miro</h3>
-            <p>Whiteboard colaborativo. El kanban se va llenando sesión a sesión como artefacto final.</p>
-          </div>
+          <article><h3>Google Workspace</h3><p>Gmail, Calendar, Docs, Sheets, Drive, Meet. La base sobre la que trabajan.</p></article>
+          <article><h3>Gemini</h3><p>Asistente ejecutivo para resumir, redactar, analizar y debatir soluciones.</p></article>
+          <article><h3>Antigravity</h3><p>IDE agent-first de Google. El agente codea por vos. Vos definís el qué y el para qué.</p></article>
+          <article><h3>Miro</h3><p>Whiteboard colaborativo. El kanban se va llenando sesión a sesión como artefacto final.</p></article>
         </div>
       </section>
 
-      <section class="section">
-        <h2>Compliance</h2>
-        <p>
-          Hilo transversal en todo el programa. En cada sesión, cuando alguien toca el límite de datos sensibles, frenamos y debatimos.
-          Los participantes aprenden qué pueden compartir, con quién, y cómo protegerlo.
-        </p>
+      <section class="section compliance-section">
+        <div class="heading">
+          <h2>Compliance</h2>
+          <p>Hilo transversal en todo el programa. En cada sesión, cuando alguien toca el límite de datos sensibles, frenamos y debatimos. Los participantes aprenden qué pueden compartir, con quién, y cómo protegerlo.</p>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>Formato</h2>
-        <ul class="format">
-          <li>Sesiones de 1.5 horas, 1 por semana</li>
-          <li>Hasta 7 participantes</li>
-          <li>Remoto (Google Meet)</li>
-          <li>Pre-work obligatorio (relevamiento de dolores y tiempos)</li>
-          <li>Facilitador experto de Alitrio</li>
-        </ul>
+      <section class="section format-section">
+        <div class="heading">
+          <h2>Formato</h2>
+        </div>
+        <div class="format-list">
+          <article><strong>Sesiones de 1.5 horas</strong><p>1 por semana. Duración total: 8-10 sesiones.</p></article>
+          <article><strong>Hasta 7 participantes</strong><p>Directivos. Más participantes con costo a definir.</p></article>
+          <article><strong>Remoto</strong><p>Google Meet. Funciona para equipos distribuidos.</p></article>
+          <article><strong>Pre-work obligatorio</strong><p>Relevamiento de dolores y tiempos antes de empezar.</p></article>
+          <article><strong>Facilitador experto</strong><p>De Alitrio. Modera, aporta, guía. No resuelve por los participantes.</p></article>
+        </div>
       </section>
 
-      <section class="section contact">
-        <h2>¿Te interesa?</h2>
-        <p>Contactanos para una sesión de diagnóstico sin costo.</p>
-        <a href="mailto:contact@alitrio.com" class="btn">contact@alitrio.com</a>
+      <section class="contact-section">
+        <div class="contact-copy">
+          <h2>¿Te interesa?</h2>
+          <p>Contactanos para una sesión de diagnóstico sin costo.</p>
+          <a class="action" href={`mailto:${contactEmail}`}>Escribinos <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 2v11M4 9l4 4 4-4" /></svg></a>
+        </div>
       </section>
-
-      <footer>
-        <p>Alitrio — Te transformamos en una AI Company.</p>
-      </footer>
     </main>
+    <footer>
+      <a class="brand" href="/">ALITRIO<span>.</span></a>
+      <p>Transformación organizacional con IA.</p>
+    </footer>
   </body>
 </html>
 
 <style>
-  :global(html, body) {
-    margin: 0;
-    padding: 0;
-    background: #0a0a0a;
-    color: #fafafa;
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
+  :global(*){box-sizing:border-box}
+  :global([hidden]){display:none!important}
+  :global(html){scroll-behavior:smooth}
+  :global(body){margin:0;background:#f5f3ed;color:#102633;font-family:Manrope,system-ui,sans-serif}
+  :global(::selection){background:#aee8d7;color:#102633}
+  :global(:focus-visible){outline:3px solid #147e83;outline-offset:4px}
+  :global(html){scrollbar-width:thin;scrollbar-color:#b8c2bd #f5f3ed}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:#f5f3ed}
+  ::-webkit-scrollbar-thumb{background:#b8c2bd;border:2px solid #f5f3ed}
+  ::-webkit-scrollbar-thumb:hover{background:#8ba19e}
+  h1,h2,h3,p{margin-top:0}
+  h1,h2,h3,.brand{font-family:'DM Sans',sans-serif}
+  .action svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75}
+  .skip{position:fixed;z-index:4;transform:translateY(-200%);top:1rem;left:1rem;background:#102633;color:#fff;padding:.8rem;text-decoration:none}
+  .skip:focus{transform:translateY(0)}
+  header,footer{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.5rem;max-width:1440px;margin:auto;padding:1.4rem clamp(1.25rem,4vw,4.5rem)}
+  .brand{color:#102633;font-size:1.35rem;font-weight:800;letter-spacing:-.04em;text-decoration:none}
+  .brand span{color:#0a7172}
+  nav{display:flex;justify-content:center;gap:clamp(.8rem,2vw,2rem)}
+  nav a{color:#46606a;font-size:.78rem;font-weight:700;text-decoration:none;transition:color .2s ease}
+  nav a:hover{color:#102633}
+  .hero{max-width:1440px;margin:auto;padding:clamp(4.5rem,10vw,9rem) clamp(1.25rem,8vw,9rem) clamp(3rem,6vw,5rem)}
+  .overline{color:#147e83;font-weight:800;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem}
+  .hero h1{max-width:14ch;font-size:clamp(2.5rem,5.5vw,4.5rem);font-weight:700;letter-spacing:-.04em;line-height:1.05;margin-bottom:2rem}
+  .hero em{color:#0a7172;font-style:normal}
+  .summary{max-width:58ch;color:#46606a;line-height:1.7}
+  .section{max-width:1440px;margin:auto;padding:clamp(4rem,9vw,8rem) clamp(1.25rem,8vw,9rem)}
+  .heading{display:grid;grid-template-columns:1.1fr .65fr;gap:3rem;margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+  h2{max-width:15ch;font-size:clamp(2rem,3.8vw,3.2rem);line-height:1.05;letter-spacing:-.03em}
+  .heading p{color:#46606a;line-height:1.7}
+  .lead{font-size:clamp(1.2rem,2vw,1.6rem);color:#102633;font-weight:600;max-width:30ch;line-height:1.4}
+  .problem{border-top:1px solid #b8c2bd}
+  .phases{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+  .phases article{border-top:1px solid #8ba19e;padding-top:1.5rem}
+  .phase-num{display:block;color:#0a7172;font-size:.72rem;font-weight:800;letter-spacing:.08em;margin-bottom:1.5rem}
+  .phases h3{font-size:clamp(1.1rem,1.8vw,1.45rem);letter-spacing:-.025em;line-height:1.2;margin-bottom:.5rem}
+  .phases p{color:#46606a;line-height:1.6;font-size:.94rem}
+  .phases-section{background:#e2e9e3}
+  .list{border-top:1px solid #102633}
+  .list article{display:grid;grid-template-columns:1fr .8fr;gap:2.5rem;border-bottom:1px solid #b8c2bd;padding:2rem 0;transition:.2s}
+  .list article:hover{background:#e9ede7;padding-inline:1rem}
+  .list h3{font-size:clamp(1.15rem,1.8vw,1.55rem);letter-spacing:-.025em;line-height:1.2;margin-bottom:.5rem}
+  .list p{color:#46606a;line-height:1.6}
+  .tools{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+  .tools article{border-top:1px solid #8ba19e;padding-top:1.5rem}
+  .tools h3{font-size:clamp(1.1rem,1.6vw,1.35rem);letter-spacing:-.025em;margin-bottom:.5rem}
+  .tools p{color:#46606a;line-height:1.6;font-size:.94rem}
+  .compliance-section{background:#102633;color:#f5f3ed}
+  .compliance-section h2{color:#f5f3ed}
+  .compliance-section .heading p{color:#aee8d7}
+  .format-list{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;border-top:1px solid #102633}
+  .format-list article{border-bottom:1px solid #b8c2bd;padding:1.5rem 0}
+  .format-list strong{display:block;font-family:'DM Sans',sans-serif;font-size:1.1rem;margin-bottom:.3rem}
+  .format-list p{color:#46606a;line-height:1.6}
+  .contact-section{max-width:1440px;margin:auto;padding:clamp(5rem,10vw,8rem) clamp(1.25rem,8vw,9rem)}
+  .contact-copy h2{font-size:clamp(2.5rem,4.5vw,4rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:1rem}
+  .contact-copy p{color:#46606a;line-height:1.7;margin-bottom:2.5rem}
+  .action{display:inline-flex;gap:.8rem;align-items:center;border:0;background:#102633;color:#fff;cursor:pointer;font:700 .9rem/1 Manrope,sans-serif;padding:1rem 1.25rem;text-decoration:none;transition:.2s ease}
+  .action:hover{background:#147e83;transform:translateY(-2px)}
+  .action:active{transform:translateY(0);background:#0a7172}
+  footer{border-top:1px solid #b8c2bd;color:#46606a;font-size:.78rem}
+  footer p{margin:0}
+  @media(max-width:760px){
+    header{grid-template-columns:1fr auto}
+    nav{display:none}
+    .heading{grid-template-columns:1fr;gap:1.5rem}
+    .phases{grid-template-columns:1fr 1fr;gap:1.5rem}
+    .tools{grid-template-columns:1fr 1fr;gap:1.5rem}
+    .list article{grid-template-columns:1fr;gap:.5rem}
+    .format-list{grid-template-columns:1fr}
   }
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 24px;
+  @media(max-width:440px){
+    .phases{grid-template-columns:1fr}
+    .tools{grid-template-columns:1fr}
   }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 0;
-  }
-  .logo {
-    color: #fafafa;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-  .tag {
-    background: #6366f1;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-  }
-  .hero {
-    padding: 60px 0 80px;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    margin: 0 0 12px;
-  }
-  .subtitle {
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    color: #a1a1aa;
-    margin: 0 0 32px;
-  }
-  .desc {
-    font-size: 1.1rem;
-    color: #d4d4d8;
-    max-width: 600px;
-    margin: 0 auto 16px;
-  }
-  .section {
-    padding: 48px 0;
-    border-top: 1px solid #27272a;
-  }
-  .section h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin: 0 0 24px;
-  }
-  .section p {
-    font-size: 1.05rem;
-    color: #d4d4d8;
-    max-width: 700px;
-    margin: 0 0 16px;
-  }
-  .phases {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-  }
-  .phase {
-    background: #18181b;
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .phase-num {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #6366f1;
-    letter-spacing: 0.1em;
-    margin-bottom: 8px;
-  }
-  .phase h3 {
-    font-size: 1.2rem;
-    margin: 0 0 8px;
-  }
-  .phase p {
-    font-size: 0.95rem;
-    color: #a1a1aa;
-    margin: 0;
-  }
-  .deliverables, .format {
-    list-style: none;
-    padding: 0;
-  }
-  .deliverables li, .format li {
-    padding: 12px 0;
-    border-bottom: 1px solid #27272a;
-    color: #d4d4d8;
-  }
-  .deliverables li:last-child, .format li:last-child {
-    border-bottom: none;
-  }
-  .tools {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-  }
-  .tool {
-    background: #18181b;
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .tool h3 {
-    font-size: 1.1rem;
-    margin: 0 0 8px;
-  }
-  .tool p {
-    font-size: 0.95rem;
-    color: #a1a1aa;
-    margin: 0;
-  }
-  .contact {
-    text-align: center;
-    padding: 64px 0;
-  }
-  .btn {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 12px 32px;
-    background: #6366f1;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-  .btn:hover {
-    background: #4f46e5;
-  }
-  footer {
-    padding: 32px 0;
-    text-align: center;
-    border-top: 1px solid #27272a;
-  }
-  footer p {
-    color: #71717a;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 640px) {
-    main {
-      padding: 0 16px;
-    }
-    header {
-      padding: 20px 0;
-    }
-    .hero {
-      padding: 40px 0 56px;
-    }
-    .hero h1 {
-      font-size: 1.75rem;
-    }
-    .subtitle {
-      font-size: 1.1rem;
-      margin: 0 0 24px;
-    }
-    .desc {
-      font-size: 1rem;
-    }
-    .section {
-      padding: 32px 0;
-    }
-    .section h2 {
-      font-size: 1.4rem;
-      margin: 0 0 16px;
-    }
-    .section p {
-      font-size: 0.95rem;
-    }
-    .phases {
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-    .phase {
-      padding: 18px;
-    }
-    .tools {
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-    .tool {
-      padding: 18px;
-    }
-    .deliverables li, .format li {
-      font-size: 0.95rem;
-      padding: 10px 0;
-    }
-    .contact {
-      padding: 48px 0;
-    }
-    .btn {
-      padding: 10px 24px;
-      font-size: 1rem;
-    }
+  @media(prefers-reduced-motion:reduce){
+    :global(html){scroll-behavior:auto}
+    *,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}
   }
 </style>
