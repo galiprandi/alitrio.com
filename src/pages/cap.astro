@@ -1,6 +1,7 @@
 ---
 const siteUrl = 'https://alitrio.com';
 const contactEmail = 'contact@alitrio.com';
+const web3formsKey = import.meta.env.WEB3FORMS_ACCESS_KEY || '373945b9-342f-46ea-b67e-990d75b2d3f9';
 ---
 
 <!doctype html>
@@ -144,14 +145,40 @@ const contactEmail = 'contact@alitrio.com';
           <p class="overline">Contacto</p>
           <h2>¿Te interesa?</h2>
           <p>Contactanos para una sesión de diagnóstico sin costo. Definimos juntos la duración de cada sesión y el número de participantes.</p>
-          <a class="action" href={`mailto:${contactEmail}`}>Escribinos <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M8 2v11M4 9l4 4 4-4" /></svg></a>
         </div>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value={web3formsKey} />
+          <input type="hidden" name="subject" value="Consulta CAP desde alitrio.com/cap" />
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="row">
+            <label>Nombre<input name="name" autocomplete="name" required placeholder="Tu nombre" /></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required placeholder="Tu email" /></label>
+          </div>
+          <label>Empresa <small>(opcional)</small><input name="company" autocomplete="organization" placeholder="Tu empresa" /></label>
+          <label>Mensaje<textarea name="message" rows="5" required placeholder="Contanos qué necesitás"></textarea></label>
+          <button class="action" type="submit">Enviar <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3 13 13 3M6 3h7v7" /></svg></button>
+          <p class="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
     <footer>
       <a class="brand" href="/">ALITRIO<span>.</span></a>
       <p>Transformación organizacional con IA.</p>
     </footer>
+    <script>
+      const form = document.querySelector('form'), status = document.querySelector('.status');
+      const copy = { sending: 'Enviando…', success: 'Gracias. Te respondemos pronto.', error: 'Algo falló. Escribinos a contact@alitrio.com.' };
+      form?.addEventListener('submit', async (event) => {
+        if (!form.checkValidity()) { event.preventDefault(); form.reportValidity(); return; }
+        event.preventDefault();
+        status.textContent = copy.sending;
+        try {
+          const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+          const data = await res.json();
+          if (data.success) { status.textContent = copy.success; form.reset(); } else { status.textContent = copy.error; }
+        } catch { status.textContent = copy.error; }
+      });
+    </script>
   </body>
 </html>
 
@@ -224,12 +251,23 @@ const contactEmail = 'contact@alitrio.com';
   .format-list article{border-bottom:1px solid #b8c2bd;padding:1.5rem 0}
   .format-list strong{display:block;font-family:'DM Sans',sans-serif;font-size:1.1rem;margin-bottom:.3rem}
   .format-list p{color:#46606a;line-height:1.6}
-  .contact-section{max-width:1440px;margin:auto;padding:clamp(5rem,10vw,8rem) clamp(1.25rem,8vw,9rem);background:#102633;color:#f5f3ed}
+  .contact-section{max-width:1440px;margin:auto;padding:clamp(5rem,10vw,8rem) clamp(1.25rem,8vw,9rem);background:#102633;color:#f5f3ed;display:grid;grid-template-columns:.75fr 1fr;gap:clamp(3rem,9vw,10rem)}
   .contact-section .overline{color:#aee8d7}
   .contact-section h2{color:#f5f3ed;font-size:clamp(2.5rem,4.5vw,4rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:1rem}
-  .contact-section p{color:#aee8d7;line-height:1.7;margin-bottom:2.5rem;max-width:48ch}
+  .contact-section p{color:#aee8d7;line-height:1.7;max-width:48ch}
   .contact-section .action{background:#f5f3ed;color:#102633}
   .contact-section .action:hover{background:#aee8d7}
+  form{display:grid;gap:1.6rem}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  label{display:grid;gap:.6rem;color:#f5f3ed;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+  label small{color:#aee8d7}
+  input,textarea{width:100%;resize:vertical;border:0;border-bottom:1px solid #46606a;background:transparent;color:#f5f3ed;font:500 1rem/1.4 Manrope;padding:.8rem 0}
+  input::placeholder,textarea::placeholder{color:#7a96a0;opacity:1}
+  input:focus,textarea:focus{outline:0;border-color:#aee8d7}
+  input,textarea{caret-color:#aee8d7}
+  input:hover,textarea:hover{border-color:#77bbb5}
+  .status{min-height:1.4em;color:#aee8d7;font-size:.84rem}
+  .botcheck{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
   .action{display:inline-flex;gap:.8rem;align-items:center;border:0;background:#102633;color:#fff;cursor:pointer;font:700 .9rem/1 Manrope,sans-serif;padding:1rem 1.25rem;text-decoration:none;transition:.2s ease}
   .action:hover{background:#147e83;transform:translateY(-2px)}
   .action:active{transform:translateY(0);background:#0a7172}
@@ -246,6 +284,8 @@ const contactEmail = 'contact@alitrio.com';
     .tools{grid-template-columns:1fr 1fr;gap:1.5rem}
     .list article{grid-template-columns:1fr;gap:.5rem}
     .format-list{grid-template-columns:1fr}
+    .contact-section{grid-template-columns:1fr;gap:2.5rem}
+    .row{grid-template-columns:1fr}
   }
   @media(max-width:440px){
     .phases{grid-template-columns:1fr}
