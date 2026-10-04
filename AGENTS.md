@@ -6,7 +6,7 @@ Landing estática de Alitrio construida con Astro y desplegada en GitHub Pages.
 
 ## Restricciones
 
-- Mantener una sola página pública: `src/pages/index.astro`.
+- Páginas públicas: `src/pages/index.astro`, `src/pages/cap.astro` y `src/pages/caso.astro` (caso de estudio + founder, bilingüe data-lang).
 - Conservar las versiones en español e inglés en la misma experiencia.
 - No incorporar backend ni dependencias sin una necesidad demostrable.
 - El formulario de contacto usa Web3Forms (`https://api.web3forms.com/submit`). La access key se inyecta en build-time desde Infisical vía GitHub Actions OIDC; en local se usa el fallback hardcoded.
